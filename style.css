@@ -2,14 +2,14 @@
 
 :root {
   --font-family: "Roboto", sans-serf;
-  --small-font: 26px;
-  --normal-font: 50px;
-  --Large-font: 90px;
+  --small-font: 2rem;
+  --normal-font: 5rem;
+  --Large-font: 8rem;
   --bg-color: #1d1d1d;
   --primary-color: #08fdd8;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --secondary-shadow: #08fdd8;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -17,32 +17,22 @@
 }
 
 a {
-  color: var(--primary-color);
   text-decoration: none;
   font-family: var(--font-family);
-  letter-spacing: 2px;
 }
 
 h1 {
   font-size: var(--Large-font);
 }
 h2 {
-  font-size: 36px;
+  font-size: var(--normal-font);
 }
 h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 24px;
-}
-h5 {
-  font-size: 20px;
-}
-h6 {
-  font-size: 16px;
+  font-size: var(--small-font);
 }
 
 html {
+  font-size: 10px;
   scroll-behavior: smooth;
 }
 
@@ -60,8 +50,11 @@ body {
   background-color: var(--bg-color);
 }
 
-.home {
-  position: relative;
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -69,12 +62,15 @@ ol,
 ul {
   list-style: none;
 }
-h1 {
-  font-family: var(--font-family);
-  font-weight: 800;
-  text-align: center;
-
+h1,
+h3 {
+  /* font-family: var(--font-family);
+  font-weight: 800; */
+  /* text-align: center; */
   color: white;
+}
+h2 {
+  color: var(--primary-color);
 }
 h1:hover {
   color: var(--primary-color);
@@ -82,12 +78,18 @@ h1:hover {
 
 /* Navbar */
 .navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
   display: flex;
-  position: relative;
-  justify-content: space-between;
   align-items: center;
-  color: white;
+  justify-content: space-between;
+  padding: 0rem 3rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
+
 .navbar-links {
   height: 100%;
 }
@@ -206,7 +208,7 @@ h1:hover {
 }
 
 /* intro */
-.intro {
+.icons-svg-intro {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -214,8 +216,8 @@ h1:hover {
   align-items: center;
   justify-content: space-evenly;
 }
-/* Social Media Icons */
 
+/* Social Media Icons */
 .social-icons {
   display: flex;
   flex-direction: column;
@@ -228,14 +230,12 @@ h1:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   margin: 10px 5px;
   outline: none;
   border: none;
   background: #a7a7a7;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   border-radius: 50%;
   transition: 0.2;
 }
@@ -250,7 +250,7 @@ h1:hover {
   from {
     transform: scale(1);
   }
-  100% {
+  50% {
     transform: scale(1.21);
   }
   to {
@@ -292,30 +292,79 @@ h1:hover {
 }
 
 .svg-img img {
-  width: 550px;
+  width: 30rem;
   top: 10px;
 }
 
 /* Contact Me Button */
 .button {
-  position: absolute;
-  left: 10vw;
-
-  color: #fff;
+  margin: 5rem 1rem;
   text-decoration: none;
   border: 2px solid var(--primary-color);
   border-radius: 0px;
-  padding: 18px 36px;
+  padding: 14px 28px;
   display: inline-block;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  letter-spacing: 5px;
   cursor: pointer;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
+  transition: ease-in 0.4s;
+}
+
+.button a {
+  color: var(--primary-color);
+}
+.button:hover a {
+  color: var(--bg-color);
 }
 .slide_right:hover {
-  color: var(--bg-color);
   box-shadow: inset 400px 0 0 0 var(--primary-color);
+}
+
+/* Skills section */
+
+.skills h2 {
+  text-align: left;
+}
+.skills h3 {
+  text-align: center;
+}
+.skills {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 5rem;
+  max-width: 85rem;
+  margin: auto;
+
+  margin-top: 2.5rem;
+}
+.icon-card img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  display: inline-block;
+  background-color: var(--bg-color);
+  border-radius: 11px;
+  box-shadow: 0 3px 10px #08fdd8c1;
+  padding: 20px;
+  margin: 30px;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 18px;
+  cursor: pointer;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-in 0.4s;
+}
+.icon-card:hover {
+  background-color: #08fdd8c1;
+}
+.icon-card:hover h3 {
+  color: var(--bg-color);
 }
