@@ -80,7 +80,7 @@ h1:hover {
 /* Navbar */
 .navbar {
   font-family: "Open Sans", sans-serif;
-  position: fixed;
+  position: sticky;
   background-color: var(--bg-color);
   top: 0;
   left: 0;
@@ -347,6 +347,23 @@ h1:hover {
   box-shadow: inset 400px 0 0 0 var(--primary-color);
 }
 
+/* About Me */
+.about-me {
+  box-shadow: var(--primary-shadow);
+  max-width: 85rem;
+  margin: auto;
+  padding: 5rem;
+  margin-top: 2.5rem;
+}
+.about-me-content {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--small-font);
+  color: white;
+  padding: 3rem;
+}
+.about-me .button {
+  margin: 3rem;
+}
 /* Skills section */
 
 .skills h3 {
@@ -354,7 +371,7 @@ h1:hover {
 }
 .skills {
   box-shadow: var(--primary-shadow);
-  padding: 3rem;
+  padding: 5rem;
   max-width: 85rem;
   margin: auto;
 
