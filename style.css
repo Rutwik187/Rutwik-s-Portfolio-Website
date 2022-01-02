@@ -108,15 +108,15 @@ h1:hover {
 }
 .navbar-links ul li {
   font-size: var(--small-font);
-  padding-right: 40px;
+  padding-right: 4rem;
   position: relative;
 }
 .navbar-links ul li a {
   transition: all 0.3s ease-in-out;
   display: block;
-  padding: 7px 15px;
+  padding: 0.7rem 1.5rem;
   text-decoration: none;
-  letter-spacing: 0px;
+  letter-spacing: 0rem;
   color: white;
   -webkit-transition: letter-spacing 0.3s linear;
   -moz-transition: letter-spacing 0.3s linear;
@@ -150,10 +150,10 @@ h1:hover {
 }
 
 #menuToggle span {
-  height: 3px;
+  height: 0.3rem;
   width: 100%;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 10rem;
   -webkit-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
   -moz-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
   -ms-transition: all 0.5s cubic-bezier(0.08, 0.81, 0.87, 0.71);
@@ -183,39 +183,8 @@ h1:hover {
   opacity: 0;
 }
 
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #menuToggle {
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
-  }
-
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .navbar-links ul li {
-    text-align: center;
-  }
-
-  .navbar-links ul li a {
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
-}
 .heading {
+  padding-left: 3rem;
   text-align: left;
 }
 /* intro */
@@ -239,13 +208,13 @@ h1:hover {
 
 /* Social Media Icons */
 .social-icons {
-  /* border: 2px solid black; */
   box-shadow: var(--primary-shadow);
   padding: 1rem;
   display: flex;
   flex-direction: column;
   position: fixed;
   left: 1%;
+  top: 10%;
   /* bottom: 50%; */
 }
 
@@ -255,7 +224,7 @@ h1:hover {
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  margin: 10px 5px;
+  margin: 1rem 0.5rem;
   outline: none;
   border: none;
   background: #a7a7a7;
@@ -282,16 +251,10 @@ h1:hover {
   }
 }
 
-@media (max-width: 600px) {
-  .social-btn {
-    display: none;
-  }
-}
-
 /* Hi i am rutwik */
 .introduction {
   max-width: 700px;
-  margin: 40px 80px;
+  /* margin: 40px 80px; */
 }
 .bounce {
   display: inline-block;
@@ -326,11 +289,11 @@ h1:hover {
   text-decoration: none;
   border: 2px solid var(--primary-color);
   border-radius: 0px;
-  padding: 14px 28px;
+  padding: 1.4rem 2.8rem;
   display: inline-block;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 18px;
-  letter-spacing: 5px;
+  font-size: 1.8rem;
+  letter-spacing: 0.5rem;
   cursor: pointer;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
@@ -391,10 +354,10 @@ h1:hover {
   background-color: var(--bg-color);
   border-radius: 11px;
   box-shadow: var(--secondary-shadow);
-  padding: 20px;
-  margin: 30px;
+  padding: 2rem;
+  margin: 3rem;
   font-family: "Lucida Console", Monaco, monospace;
-  font-size: 18px;
+  font-size: 1.8rem;
   cursor: pointer;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
@@ -454,7 +417,7 @@ h1:hover {
 .project-content {
   opacity: 0;
   position: relative;
-  padding: 40px;
+  padding: 0.4rem;
   color: var(--bg-color);
   transition: 0.3s;
   padding: 2rem;
@@ -469,13 +432,13 @@ h1:hover {
 }
 
 .project-info {
-  margin: 40px;
+  margin: 0.4rem;
   font-size: var(--small-font);
   text-align: center;
   color: var(--bg-color);
 }
 .project-info-white {
-  margin: 40px;
+  margin: 0.4rem;
   font-size: var(--small-font);
   text-align: center;
   color: white;
@@ -518,9 +481,11 @@ h1:hover {
 .Contact-container {
   width: 100%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .Contact-container .contactInfo {
@@ -531,7 +496,7 @@ h1:hover {
 
 .Contact-container .contactInfo .box {
   position: relative;
-  padding: 20px 0;
+  padding: 2rem 0;
   display: flex;
 }
 
@@ -541,7 +506,7 @@ h1:hover {
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  margin: 10px 5px;
+  margin: 1rem 0.5rem;
   outline: none;
   border: none;
   background: #a7a7a7;
@@ -553,8 +518,8 @@ h1:hover {
 
 .Contact-container .contactInfo .box .text {
   display: flex;
-  margin-left: 20px;
-  font-size: 16px;
+  margin-left: 2rem;
+  font-size: 1.6rem;
   color: #fff;
   flex-direction: column;
   font-weight: 300;
@@ -567,14 +532,14 @@ h1:hover {
 
 .contactForm {
   width: 40%;
-  padding: 40px;
+  padding: 4rem;
   background-color: var(--bg-color);
   box-shadow: var(--secondary-shadow);
   border-radius: 1rem;
 }
 
 .contactForm h2 {
-  font-size: 30px;
+  font-size: 3rem;
   color: var(--primary-color);
   font-weight: 500;
 }
@@ -582,15 +547,15 @@ h1:hover {
 .contactForm .inputBox {
   position: relative;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
   width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+  margin: 1rem 0;
   border: none;
   border-bottom: 2px solid var(--primary-color);
   outline: none;
@@ -599,36 +564,12 @@ h1:hover {
   color: white;
 }
 
-.contactForm h2 {
-  font-size: 30px;
-  color: var(--primary-color);
-  font-weight: 500;
-}
-
-.contactForm .inputBox {
-  position: relative;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea {
-  width: 100%;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid var(--primary-color);
-  outline: none;
-  resize: none;
-}
-
 .contactForm .inputBox span {
   position: absolute;
   left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
+  padding: 0.5rem 0;
+  font-size: 1.6rem;
+  margin: 1rem 0;
   pointer-events: none;
   transition: 0.5s;
   color: #666;
@@ -639,72 +580,107 @@ h1:hover {
 .contactForm .inputBox textarea:focus ~ span,
 .contactForm .inputBox textarea:valid ~ span {
   color: #666;
-  font-size: 12px;
-  transform: translateY(-20px);
+  font-size: 1.2rem;
+  transform: translateY(-2rem);
 }
 
 .contactForm .inputBox input[type="submit"] {
-  width: 100px;
+  width: 10rem;
   background: #484b39;
   color: #fff;
   border: none;
   cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
+  padding: 1rem;
+  font-size: 1.8rem;
 }
 
 @media (max-width: 991px) {
-  .contact {
-    padding: 50px;
-  }
-  .container {
-    flex-direction: column;
-  }
-  .container .contactInfo {
-    margin-bottom: 40px;
-  }
-  .container .contactInfo,
-  .contactForm {
-    width: 100%;
-  }
-}
-
-.contactForm .inputBox span {
-  position: absolute;
-  left: 0;
-  padding: 5px 0;
-  font-size: 16px;
-  margin: 10px 0;
-  pointer-events: none;
-  transition: 0.5s;
-  color: #666;
-}
-
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
-  color: #666;
-  font-size: 12px;
-  transform: translateY(-20px);
 }
 
 .contactForm .button {
   margin: 2rem;
 }
 
-@media (max-width: 991px) {
-  .contact {
-    padding: 50px;
+@media (max-width: 950px) {
+  html {
+    font-size: 7px;
   }
-  .container {
+  .contact {
+    padding: 5rem;
+  }
+  .contact-container {
     flex-direction: column;
   }
-  .container .contactInfo {
-    margin-bottom: 40px;
+  .contact-container .contactInfo {
+    margin-bottom: 4rem;
   }
-  .container .contactInfo,
+  .contact-container .contactInfo,
   .contactForm {
+    width: 70%;
+  }
+  .Contact-container .contactInfo .box .icon img {
+    width: 7px;
+  }
+  .social-icons {
+    box-shadow: none;
+  }
+  .social-btn {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  .social-btn img {
+    width: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects .heading,
+  .contact .heading {
+    padding-left: 5rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #menuToggle {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
     width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 4px;
+  }
+  .navbar {
+    height: 0rem;
   }
 }
